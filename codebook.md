@@ -155,7 +155,8 @@ names(dataActivity) <- c("activity")
 dataFeaturesNames   <- read.table(file.path(path_rf, "features.txt"),head=FALSE)
 names(dataFeatures) <- dataFeaturesNames$V2
 
-###1. Merges the training and the test sets to create one data set.
+
+### 1. Merges the training and the test sets to create one data set.
  Now Merge columns to get the data frame for subject, activity 
  and features 
 dataCombine <- cbind(dataSubject, dataActivity)
